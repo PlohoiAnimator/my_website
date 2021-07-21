@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:500');
+
+*{
+    background-color: #131313;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo, .nav_item, .nav_link, .btn{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header {
+    width: 70%;
+    margin: auto;
+}
+.navbar {
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+}
+
+.logo {
+    font-size: 36px;
+}
+
+.nav__links {
+    flex: 1;
+    text-align: center;
+}
+.nav_item {
+    display: inline-block;
+    cursor: pointer;
+    list-style: none;
+
+}
+.nav_link {
+    position: relative;
+    padding: 0px 20px;
+    transition: all 0.3s;
+    
+}
+.nav_link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    border-radius: 10%;
+    background-color: rgb(19, 163, 62);
+    bottom: -100%;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: all .3s;
+}
+
+.nav_link:hover::after {
+    bottom: -55%;
+    opacity: 1;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    transition: all 0.3s;
+}
+.btn {
+    padding: 9px 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin: 0px 5px;
+}
+.btn-login:hover {
+    background-color: green;
+    border: 1px solid #131313;
+}
+.btn-register:hover {
+    background-color: rgb(63, 148, 201);
+    border: 1px solid #131313;
+}
+@media screen and (max-width: 1374px){
+    header {
+        width: 90%;
+        margin: auto;
+    }
+    .nav_link{
+        font-size: 16px;
+    }
+    .btn-container {
+        flex-direction: column;
+        transition: all .3s;
+    }
+    .btn {
+        margin: 5px 0px;
+        font-size: 16px;
+        border:none;
+    }
+}
