@@ -4,9 +4,15 @@ import '../style/main.css'
 
 const Main: FC = () => {
     return(
-        <div className='container'>
-            
-        </div>
+        <main>
+            {/* <div className='container'>
+                <div className="content">
+                    <h1>Hello world</h1>
+                </div>
+            </div> */}
+            dsadsad
+        </main>
+
     )
 }
 
