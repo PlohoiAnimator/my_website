@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+.sidebar {
+    margin: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #fdfbfb;
+    flex: 3;
+}
+.sidebarItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sidebarTitle  {
+    width: 80%;
+    margin: 10px;
+    padding: 5px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    line-height: 19px;
+    font-weight: bold;
+    text-align: center;
+    border-top: 2px solid #24242422;
+    border-bottom: 2px solid #24242422;
+}
+.sidebarItem > img {
+    margin-top: 15px;
+    width: 250px;
+}
+.sidebarItem > p {
+    padding: 30px;
+}
+.sidebarList {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+.sidebarListItem {
+    display: inline-block;
+    width: 50%;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.sidebarSocial {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-top: 15px;
+}
+.sidebarIcon {
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
