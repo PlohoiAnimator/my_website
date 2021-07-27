@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+.post {
+    width: 550px;
+    margin: 0px 25px 40px 25px;
+    border-radius: 10px;
+}
+.postWrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.postImg {
+    object-fit: fill;
+    width:  550px;
+    height: 425px;
+    border-radius: 8px;
+}
+.postCats {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #d18135;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.postCat {
+    margin: 0px 10px;
+    cursor: pointer;
+}
+.postTitle {
+    margin-top: 15px;
+}
+.postDate {
+    color: #777777;
+    font-style: italic;
+    font-size: 16px;
+    margin-top: 15px;
+}
+.postDesc {
+    margin-top: 20px;
+    color: #3b3b3b;
+    font-size: 18px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+}

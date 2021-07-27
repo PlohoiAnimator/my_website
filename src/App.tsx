@@ -1,12 +1,14 @@
 import React from 'react';
-import Content from './components/Content/Content';
+import HomePage from './pages/HomePage/HomePage';
 import Navbar from './components/Navbar/Navbar';
+import Single from './pages/single/Single';
+import Write from './pages/write/Write';
 
 function App() {
   return (
     <div>
       <Navbar/>
-      <Content/>
+      <Write/>
     </div>
   );
 }
